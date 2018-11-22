@@ -48,7 +48,7 @@ const initialState = {
       marker: 'http://1.bp.blogspot.com/-nkzBWxmBEbM/UCDikvcMRPI/AAAAAAAAV_4/GuOzVNTmplI/s1600/nikola_tesla__the_inventor_of_the_modern_world_by_awolfillustrations-d55yvir.jpg',
       photo: 'https://upload.wikimedia.org/wikipedia/commons/9/94/Clara_Rockmore_2.JPG',
       modelurl: 'https://img1.cgtrader.com/items/636406/dc63d1f017/human-anatomy-complete-3d-model-obj-fbx-c4d-ma-mb.jpg',
-      vuforianame: 'idn',
+      vuforianame: 'idk',
       assetbundle: 'https://www.google.com',
 
 

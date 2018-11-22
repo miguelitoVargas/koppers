@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux'
 import { Input } from 'antd'
 // import search action
 import { searchAction } from '../actions/index'
-
+import '../styles/searchBar.css'
 const Search = Input.Search;
 
 class SearchBar extends Component {

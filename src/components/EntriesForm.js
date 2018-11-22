@@ -253,7 +253,7 @@ class EntriesForm extends Component {
   renderFormData() {
 
     const columns = [
-      { title: 'Name', dataIndex: 'firstname', key: 'firstname', render: text => <p><span>{text}</span></p> },
+      { title: 'Name', dataIndex: 'firstname', key: 'firstname' }, 
       { title: 'Lastname', dataIndex: 'lastname', key: 'lastname' },
       { title: 'Age', dataIndex: 'age', key: 'age' },
       { title: 'Position', dataIndex: 'position', key: 'position' },
@@ -269,14 +269,16 @@ class EntriesForm extends Component {
     ]
       console.log('props in form data', this.props) 
     return (
-      <div className="tableContainer">
-        <SearchBar />
-        <Table 
-          columns={columns} 
-          dataSource={this.props.data}
-          size="middle" 
-        >
-        </Table>
+      <div>
+        <SearchBar  />
+        <div className="tableContainer">
+          <Table 
+            columns={columns} 
+            dataSource={this.props.data}
+            size="middle" 
+          >
+          </Table>
+        </div>
       </div>
     )
   }
