@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { Layout, Cascader, Form, Button, Input, InputNumber, Upload, Icon, message, Row, Menu, Table } from 'antd'
 import { Link, Redirect, Route, Switch } from 'react-router-dom'
 import SearchBar from '../containers/SearchBar'
+import { uploadFormData } from '../actions/index'
 
 import '../styles/entriesForm.css'
 const FormItem = Form.Item
@@ -82,7 +83,8 @@ class EntriesForm extends Component {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        console.log('You can safely upload this values: ', values);
+        //      console.log('You can safely upload this values: ', values);
+        this.props.dispatch(uploadFormData(values))
       }
     });
   }
@@ -139,7 +141,8 @@ class EntriesForm extends Component {
     const { imageMarkerUrl, imagePhotoUrl } = this.state 
     return (
 
-      <Form className="formContainer"
+      <Form 
+        className="formContainer"
         onChange={this.handleFormChange}
         onSubmit={this.handleFormSubmit}
       >
@@ -298,7 +301,7 @@ class EntriesForm extends Component {
               onClick={this.menuItemOnClick}
             >
               <Link to="/form">
-                <Icon type="frown" />
+                <Icon type="arrow-right" />
                 <span>opcion 1</span>
               </Link>
             </MenuItem>
@@ -307,7 +310,7 @@ class EntriesForm extends Component {
               onClick={this.menuItemOnClick}
             >
               <Link to="/formdata">
-                <Icon type="meh" />
+                <Icon type="arrow-right" />
                 <span>opcion 2</span>
               </Link>
             </MenuItem>

@@ -1,5 +1,11 @@
+.ant-layout-sider-trigger {
+  background: #47036f !important;
+    
+}
+
 .Container {
   padding: 15px 20px;
+  background-color: white !important;
 }
 .uploadButton {
   width: 50px;

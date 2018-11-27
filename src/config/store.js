@@ -10,31 +10,6 @@ const middleware = []
 
 const initialState = {
 
-  fields: {
-    firstname: {
-      value: 'miguel'
-    },
-    lastname: {
-      value: 'popo'
-    },
-    age: {
-      value: ''
-    },
-    position: {
-      value: ''
-    },
-    team: {
-      value: ''
-    },
-    club: {
-      value: ''
-    },
-    area: {
-      value: ''
-    },
-  },
-  loading: false,
-  imageUrl: '',
   data:  [
     {
       key: '1', 
